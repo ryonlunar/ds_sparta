@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div style="text-align: center;"></div>
+            <label for="Creator">Created by:</label>
+            <input type="text" id="Creator" name="Creator" value="Adhimas Aryo Bimo" readonly><br>
+
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID" value="19623142" readonly><br>
+        </div>
+        <form style="margin: 50px auto 0; max-width: 800px;" action="/submit" method="POST">
+            <div style="display: flex;">
+            <div style="flex: 1;">
+            <div>
+            <label for="Year_Birth">Year of Birth:</label>
+            <input type="number" id="Year_Birth" name="Year_Birth" min="0" required><br>
+
+            <label for="Education">Education:</label>
+            <select id="Education" name="Education" required>
+            <option value="PhD">PhD</option>
+            <option value="Master">Master</option>
+            <option value="Graduation">Graduation</option>
+            <option value="2n Cycle">2n Cycle</option>
+            <option value="Basic">Basic</option>
+            </select><br>
+
+            <label for="Marital_Status">Marital Status:</label>
+            <select id="Marital_Status" name="Marital_Status" required>
+            <option value="Married">Married</option>
+            <option value="Together">Together</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widow">Widow</option>
+            </select><br>
+
+            <label for="Income">Income:</label>
+            <input type="number" id="Income" name="Income" min="0" required><br>
+
+            <label for="Kidhome">Kidhome:</label>
+            <input type="number" id="Kidhome" name="Kidhome" min="0" required><br>
+
+            <label for="Teenhome">Teenhome:</label>
+            <input type="number" id="Teenhome" name="Teenhome" min="0" required><br>
+
+            <label for="Dt_Customer">Date of Customer:</label>
+            <input type="date" id="Dt_Customer" name="Dt_Customer" required pattern="\d{2}/\d{2}/\d{4}" title="Please enter a date in the format dd/mm/yyyy"><br>
+
+            <label for="Recency">Recency:</label>
+            <input type="number" id="Recency" name="Recency" min="0" required><br>
+
+            <label for="MntWines">MntWines:</label>
+            <input type="number" id="MntWines" name="MntWines" min="0" required><br>
+
+            <label for="MntFruits">MntFruits:</label>
+            <input type="number" id="MntFruits" name="MntFruits" min="0" required><br>
+            </div>
+            </div>
+            
+            <div style="flex: 1;">
+            <div>
+            <label for="MntMeatProducts">MntMeatProducts:</label>
+            <input type="number" id="MntMeatProducts" name="MntMeatProducts" min="0" required><br>
+
+            <label for="MntFishProducts">MntFishProducts:</label>
+            <input type="number" id="MntFishProducts" name="MntFishProducts" min="0" required><br>
+
+            <label for="MntSweetProducts">MntSweetProducts:</label>
+            <input type="number" id="MntSweetProducts" name="MntSweetProducts" min="0" required><br>
+
+            <label for="MntGoldProds">MntGoldProds:</label>
+            <input type="number" id="MntGoldProds" name="MntGoldProds" min="0" required><br>
+
+            <label for="NumDealsPurchases">NumDealsPurchases:</label>
+            <input type="number" id="NumDealsPurchases" name="NumDealsPurchases" min="0" required><br>
+
+            <label for="NumWebPurchases">NumWebPurchases:</label>
+            <input type="number" id="NumWebPurchases" name="NumWebPurchases" min="0" required><br>
+
+            <label for="NumCatalogPurchases">NumCatalogPurchases:</label>
+            <input type="number" id="NumCatalogPurchases" name="NumCatalogPurchases" min="0" required><br>
+
+            <label for="NumStorePurchases">NumStorePurchases:</label>
+            <input type="number" id="NumStorePurchases" name="NumStorePurchases" min="0" required><br>
+
+            <label for="NumWebVisitsMonth">NumWebVisitsMonth:</label>
+            <input type="number" id="NumWebVisitsMonth" name="NumWebVisitsMonth" min="0" required><br>
+
+            <label for="Complain">Complain:</label>
+            <select id="Complain" name="Complain" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+            </select><br>
+            </div>
+            </div>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
